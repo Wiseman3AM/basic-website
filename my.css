@@ -1,0 +1,142 @@
+/* BODY */
+body {
+  background-color: lightgoldenrodyellow;
+}
+
+/* Title class */
+.city,
+.forieng {
+  width: 90%;
+}
+
+.t1 {
+  background-color: yellow;
+}
+
+.t2 {
+  background-color: lightcyan;
+}
+
+/* Subject class */
+.subject {
+  margin: 1em;
+  padding: 1em;
+  width: 90%;
+}
+
+.asra,
+.fswd,
+.tbc {
+  flex: 1;
+}
+
+/* History class */
+.history {
+  width: 90%;
+}
+
+.cogh,
+.imm,
+.dsm {
+  flex: 1;
+  width: 90%;
+  margin: 1px;
+}
+
+/* Media Queries */
+@media (min-width: 1080px) {
+  .history,
+  .subject,
+  .lring {
+    display: flex;
+  }
+
+  /* Historical Query */
+  .cogh,
+  .imm,
+  .dsm {
+    width: 99%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+  }
+
+  .center {
+    text-align: center;
+    grid-column: 1 / span 2;
+    font-size: medium;
+  }
+
+  .left {
+    grid-column: 1 / 2;
+    padding-left: 2em;
+    font-size: small;
+  }
+
+  .right {
+    grid-column: 2 / 2;
+    justify-self: first baseline;
+    padding-top: 3.5em;
+    padding-right: 3em;
+  }
+
+  /* Title Query */
+  .lring {
+    justify-self: flex-end;
+    grid-template-areas: '2/2';
+    padding-left: 50%;
+  }
+}
+
+/* ROOT FONT STYLES */
+* {
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: #333447;
+  line-height: 1.5;
+  font-size: medium;
+}
+
+/* TYPOGRAPHY */
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
+}
