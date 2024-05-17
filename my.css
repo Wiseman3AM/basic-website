@@ -6,7 +6,7 @@ body {
 /* Title class */
 .city,
 .forieng {
-  width: 90%;
+  width: 95%;
 }
 
 .t1 {
@@ -21,7 +21,7 @@ body {
 .subject {
   margin: 1em;
   padding: 1em;
-  width: 90%;
+  width: 95%;
 }
 
 .asra,
@@ -30,56 +30,35 @@ body {
   flex: 1;
 }
 
-/* History class */
-.history {
-  width: 90%;
-}
-
-.cogh,
-.imm,
-.dsm {
-  flex: 1;
-  width: 90%;
-  margin: 1px;
-}
 
 /* Media Queries */
-@media (min-width: 1080px) {
-  .history,
+@media (min-width: 960px) {
   .subject,
   .lring {
     display: flex;
   }
 
+
   /* Historical Query */
-  .cogh,
-  .imm,
-  .dsm {
-    width: 99%;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2px;
+  .history {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.historyig{
+  width: 200px;
+  align-self: self-start;
+  padding-top:  2em;
+}
+
+  .column {
+    display: flex;
+    gap: 10px;
+    margin-inline-start: auto;
   }
 
-  .center {
-    text-align: center;
-    grid-column: 1 / span 2;
-    font-size: medium;
-  }
 
-  .left {
-    grid-column: 1 / 2;
-    padding-left: 2em;
-    font-size: small;
-  }
-
-  .right {
-    grid-column: 2 / 2;
-    justify-self: first baseline;
-    padding-top: 3.5em;
-    padding-right: 3em;
-  }
 
   /* Title Query */
   .lring {
@@ -87,6 +66,32 @@ body {
     grid-template-areas: '2/2';
     padding-left: 50%;
   }
+}
+
+
+@media (max-width: 960px){
+  body{
+    width: 90%;
+  }
+  /* History class */
+.history {
+  display: block;
+  width: 90%;
+}
+
+.column {
+  display: flex;
+  gap: 20px;
+}
+
+.historyig{
+  width: 200px;
+  align-self: self-start;
+  padding-top:  2em;
+}
+.mid{
+  order: 1;
+}
 }
 
 /* ROOT FONT STYLES */

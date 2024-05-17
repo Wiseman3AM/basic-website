@@ -7,29 +7,36 @@
     <title>my-webpage-grid</title>
     <link rel="stylesheet" href="simple-grid.css">
     <style>
-      
-
-        .t1{
+        /* Table 
+ ------------------------------------------------------------------------------------------------------------------------------*/
+        .t1 {
             background-color: yellow;
         }
 
-        .t2{
+        .t2 {
             background-color: lightcyan;
         }
-
+        @media (max-width: 960px){
+            .mid-text{
+                float: right !important;
+            }
+        }
     </style>
 </head>
-<body >
+
+<body>
     <div class="row">
         <h1 class="col-12" style="background-color: burlywood;">Amukelani Mthombeni</h1>
-    <div class="col-7"></div>
+    </div>
+    <div class="row">
+        <div class="col-7"></div>
         <div class="col-5"><img src="images/TBM.jpg" width="350" height="500"></div>
     </div>
 
     <div class="row">
         <h2 class="col-12" style="background-color: burlywood;">Which City?</h2>
         <div class="col-4"><img src="images/city.jpeg" width="350"></div>
-        <p class="col-9" >Shenzhen is the one of the leading tech cities in the world, I would like to visit this city to
+        <p class="col-9">Shenzhen is the one of the leading tech cities in the world, I would like to visit this city to
             view and experience what developments are currently happening in one of the cities which will shape the
             future of the world.
         </p>
@@ -41,7 +48,7 @@
         <p class="col-8">A foriegn language I would like to learn is Japanese, three phrases I already know from the
             language include the following:</p>
         <div class="col-12">
-            <table border="2" >
+            <table border="2">
                 <tr class="t1">
                     <th>Japanese phrase</th>
                     <th>English translation</th>
@@ -75,21 +82,21 @@
                 <div class="col-4">
                     <h3>Fullstack web development</h3>
                     <div class="row">
-                        <img class="col-8" src="images/FSWD.jpeg" width="50">
+                        <img class="col-12-sm" src="images/FSWD.jpeg" width="50">
                     </div>
                 </div>
 
                 <div class="col-4">
                     <h3>4IR technology bootcamp</h3>
                     <div class="row">
-                        <img class="col-8" src="images/4TB.jpeg" width="50">
+                        <img class="col-12-sm" src="images/4TB.jpeg" width="50">
                     </div>
                 </div>
 
                 <div class="col-4">
                     <h3>Agile rapid skils aquisition</h3>
                     <div class="row">
-                        <img class="col-8" src="images/ARSA.jpeg" width="50">
+                        <img class="col-12-sm" src="images/ARSA.jpeg" width="50">
                     </div>
                 </div>
 
@@ -105,34 +112,34 @@
                     <div class="col-4">
                         <h3>Castle of Good Hope</h3>
                         <div class="row">
-                            <p class="col-6" style="font-size: smaller;">It was not built by Jan Van Riebeeck. The
+                            <p class="col-6-sm font-light" style="font-size: smaller;" style="text-align: justify;">It was not built by Jan Van Riebeeck. The
                                 Castle of Good Hope was referred to as “Kui keip” (Stone Kraal) by the Khoi. Yellow
                                 paint was originally chosen for the walls because it reduced the effects of the hot
                                 African sun </p>
-                            <img class="col-6" src="images/COGH.jpg" width="150">
+                            <img class="col-6-sm" src="images/COGH.jpg">
                         </div>
                     </div>
 
                     <div class="col-4">
                         <h3>Districk Six Meseum</h3>
                         <div class="row">
-                            <p class="col-6" style="font-size: smaller;">The area of District Six was originally
+                            <p class="col-6-sm font-light mid-text" style="font-size: smaller;" style="text-align: justify;">The area of District Six was originally
                                 populated by freed enslaved people after abolition in 1833. . You can walk the museum
                                 floor covered by a large map of the district and accompanied by hand-written notes from
                                 former inhabitants. </p>
-                            <img class="col-6" src="images/D6M.jpeg" width="150">
+                            <img class="col-6-sm" src="images/D6M.jpeg">
                         </div>
                     </div>
 
                     <div class="col-4">
                         <h3>Iziko Museum</h3>
                         <div class="row">
-                            <p class="col-6" style="font-size: smaller;">The museum was founded in 1825, the first in
+                            <p class="col-6-sm font-light" style="font-size: smaller;" style="text-align: justify;">The museum was founded in 1825, the first in
                                 the country. The museum is organized on four levels and hosts a variety of exhibitions,
                                 from rock art to fossils, marine animals and meteorites. Iziko South African Museum:
                                 Home to thousands of specimens, including fossils, stone tools, traditional clothing,
                                 and artifacts dating back almost 700 million years.</p>
-                            <img class="col-6" src="images/IM.jpeg" width="150">
+                            <img class="col-6-sm" src="images/IM.jpeg"">
                         </div>
                     </div>
                 </div>
@@ -141,11 +148,11 @@
 
         </div>
 
-        </body>
+</body>
 
-        <footer>
-            <p><a href="index.html">Homepage</a></p>
-            <p> Designed by Amukelani Mthombeni</p>
-        </footer>
+<footer>
+    <p><a href="index.html">Homepage</a></p>
+    <p> Designed by Amukelani Mthombeni</p>
+</footer>
 
 </html>
