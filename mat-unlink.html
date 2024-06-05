@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-webpage-materialize-unlinked</title>
+    <link rel="stylesheet" href="./materialize.css">
+    <style>
+        /* Table 
+ ------------------------------------------------------------------------------------------------------------------------------*/
+        body {
+            margin-left: 1.5em;
+            margin-right: 1.5em;
+            font-family: Franklin Gothic Medium;
+        }
+        p{
+            font-size: medium;
+        }
+
+        .table {
+            border: 1px solid black;
+
+        }
+
+        .t1 {
+            background-color: yellow;
+            border: 1px solid black;
+        }
+
+        .t2 {
+            background-color: lightcyan;
+            border: 1px solid black;
+        }
+
+        @media (max-width: 960px) {
+            .mid-text {
+                float: right !important;
+            }
+        }
+        
+        .lf-pic{
+            float: right !important;
+        }
+
+        .backImage {
+            background-image: url('./images/TBMFO.jpg');
+            width: 250px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 50vh;
+            /* Adjust this as needed */
+            width: 100%;
+        }
+
+        .footer { background-color: #caf0f8;
+            margin-left: -1.5em;
+            margin-right: -1.5em;
+            padding-top: 1em;
+        }
+        
+        .foot-text{
+            margin-left: 1em;
+            padding-bottom: 1em;
+        }
+
+    
+    </style>
+</head>
+
+<body class="amber lighten-4">
+
+    <div>
+        <div class="row">
+            <h1 class="col s12  red accent-2">{{user.fullName}}</h1>
+        </div>
+        <div class="row backImage">
+            <div class="col s12 m6"></div>
+            <div class="col s12 m4">
+                <a href="https://www.linkedin.com/in/amukelani-mthombeni-760b64233?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app">
+                <img src="{{user.photo}}" alt="Picture of myself" width="250" height="300" class="reponsive-img circle"
+                    style="float: right;">
+                </a>
+                </div>
+        </div>
+
+        <div class="row">
+            <h2 class="col s12  red accent-2">{{city.name}}</h2>
+            <div class="row">
+                <a href="https://en.wikipedia.org/wiki/Shenzhen">
+                <img src="{{city.photo}}" class="s12 l4">
+                </a>
+                <p class="col s12 l8 lf-pic">
+                    {{city.description}}
+                </p>
+
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="row">
+            <h2 class="col s12 red accent-2">{{foreignLanguage.language}}</h2>
+            <p class="col s12">A foriegn language I would like to learn is Japanese, three phrases I already know from
+                the
+                language include the following:</p>
+            <div class="col s12">
+                <table class="table" style="border: 1px solid black;">
+                    <tr class="t1">
+                        <th>Japanese phrase</th>
+                        <th>English translation</th>
+                    </tr>
+
+                    <tr class="t2">
+                        <th>{{foreignLanguage.phrases.[0].japanese}}</th>
+                        <th>{{foreignLanguage.phrases.[0].english}}</th>
+                    </tr>
+
+                    <tr class="t2">
+                        <th>{{foreignLanguage.phrases.[1].japanese}}</th>
+                        <th>{{foreignLanguage.phrases.[1].english}}</th>
+                    </tr>
+
+                    <tr class="t2">
+                        <th>{{foreignLanguage.phrases.[2].japanese}}</th>
+                        <th>{{foreignLanguage.phrases.[2].english}}</th>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="row">
+            <h2 class="col s12 red accent-2">Favourite subjects</h2>
+
+            <div>
+                <div>
+                    <div class="col s12 m8 l4">
+                        <div class="row">
+                            <h3 class="col s12 light-blue lighten-5">{{favouriteSubjects.[0].name}}</h3>
+                        </div>
+                        <div class="row">
+                            <a href="https://www.geeksforgeeks.org/what-is-full-stack-development/">
+                                <img class="col s12" src="{{favouriteSubjects.[0].image}}" alt="Illustration of Fullstack web development"></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col s12 m8 l4">
+                    <div class="row">
+                        <h3 class="col s12 light-blue lighten-5">{{favouriteSubjects.[1].name}}</h3>
+                    </div>
+
+                    <div class="row">
+                        <a
+                            href="https://www.techtarget.com/whatis/definition/fourth-industrial-revolution#:~:text=The%20Fourth%20Industrial%20Revolution%20is%20the%20current%20and,changing%20the%20way%20modern%20people%20live%20and%20work.">
+                            <img class="col s12" src="{{favouriteSubjects.[1].image}}" alt="Illustration of 4IR tech bootcamp"></a>
+                    </div>
+                </div>
+
+                <div class="col s12 m8 l4">
+                    <div class="row">
+                        <h3 class="col s12 light-blue lighten-5">{{favouriteSubjects.[2].name}}</h3>
+                    </div>
+                    <div class="row">
+                        <a href="https://www.dau.edu/acquipedia-article/agile-acquisition-project-management"><img
+                                class="col s12" src="{{favouriteSubjects.[2].image}}" alt="Illustration of agile rapid skills acquisition"></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div>
+        <div class="row">
+            <h2 class="col-12 red accent-2">Historical places</h2>
+            <div>
+                <div class="row">
+
+                    <div class="col s12  l4">
+                        <h3 class=" col s12 light-blue lighten-5">{{historicalPlaces.[0].name}}</h3>
+                        <div class="row">
+                            <p class="col s6" style="text-align: justify;">
+                                {{historicalPlaces.[0].description}}</p>
+                           <a href="https://en.wikipedia.org/wiki/Castle_of_Good_Hope"><img class="col s6" src="{{historicalPlaces.[0].photo}}" alt="Picture of the Castle of Good Hope" style="padding-top: 1.5em;"></a>
+                        </div>
+                    </div>
+
+                    <div class="col s12  l4">
+                        <h3 class="col s12 light-blue lighten-5">{{historicalPlaces.[1].name}}</h3>
+                        <div class="row">
+                            <p class="col s6 mid-text" style="text-align: justify;">{{historicalPlaces.[1].description}}
+                            </p>
+                           <a href="https://en.wikipedia.org/wiki/District_Six_Museum"><img class="col s6" src="{{historicalPlaces.[1].photo}}" alt="Picture of District Six Museum" style="padding-top: 1.5em;"></a>
+                            <!-- width="250" style="padding-top: 1.5em;"-->
+                        </div>
+                    </div>
+
+                    <div class="col s12  l4">
+                        <h3 class=" col s12 light-blue lighten-5">{{historicalPlaces.[2].name}}</h3>
+                        <div class="row">
+                            <p class="col s6" style="text-align: justify;">{{historicalPlaces.[2].description}}</p>
+                            <a href="https://en.wikipedia.org/wiki/Iziko_South_African_Museum"><img class="col s6" src="{{historicalPlaces.[2].photo}}" alt="Picture of Iziko Museum" style="padding-top: 1.5em;"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class=" footer">
+    <div class="foot-text">
+        <p>Mocha unit test:  <a href="https://wiseman3am.github.io/bootcamp-tests/">Tests</a>
+        <p>Basic website:  <a href="https://wiseman3am.github.io/basic-website/"> SimpleGrid/Flexbox</a></p>
+        <p>Copyright not reserved @2024</p>
+    </div>
+    </footer>
+</body>
+
+</html>
