@@ -160,3 +160,11 @@ a {
   background-color: #ffffff;
   color: #003049;
 }
+
+.title, footer, .mat, .sg, .fxb, .mul, .acv, .toggle-container, 
+.darkmode .title, .darkmode footer, .darkmode .mat, .darkmode .sg, 
+.darkmode .fxb, .darkmode .mul, .darkmode .acv {
+  border-radius: 10px;
+}
+
+
