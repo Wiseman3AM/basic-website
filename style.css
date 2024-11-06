@@ -67,13 +67,28 @@ footer {
   flex: 1 1 250px;
 }
 
+.mat2{
+  background-color: #403d39;
+  border: 2px solid #403d39;
+  border-radius: 5px;
+  padding: 1em;
+  max-width: 500px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+  flex: 1 1 250px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
 @media (max-width: 719.9px) {
-  .mat, .sg, .fxb, .mul, .acv {
+  .mat, .mat2, .sg, .fxb, .mul, .acv {
     margin-bottom: 1em;
   }
 }
@@ -124,7 +139,7 @@ a {
 
 
 
-.darkmode .mat, .darkmode .sg, .darkmode .fxb, .darkmode .mul, .darkmode .acv {
+.darkmode .mat, .darkmode .mat2, .darkmode .sg, .darkmode .fxb, .darkmode .mul, .darkmode .acv {
   background-color: #403d39;
   border: 2px solid #403d39;
   color: white;
@@ -146,7 +161,7 @@ h2, h1, h3 {
   text-shadow: none;
 }
 
-.mat, .sg, .fxb, .mul, .acv {
+.mat, .sg, .fxb, .mul, .acv, .mat2 {
   background-color: #f0f0f0;
   border: 2px solid #003049;
   color: #003049;
@@ -157,7 +172,7 @@ a {
 }
 
 .toggle-button {
-  background-color: #ffffff;
+  background-color: #383636;
   color: #003049;
 }
 
@@ -167,4 +182,7 @@ a {
   border-radius: 10px;
 }
 
+.darkmode .toggle-button {
+  background-color: #ffffff;
+}
 
